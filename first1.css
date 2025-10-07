@@ -1,0 +1,67 @@
+/* first1.css - place in the same folder as first1.html */
+
+/* Page reset + base font */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: "Segoe UI", Roboto, Arial, sans-serif; background: linear-gradient(135deg, #0f172a 0%, #0b2a59 100%); color: #f8fafc; }
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 28px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* Heading */
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.4px;
+}
+
+/* Subtitle / description */
+p.lead {
+  color: #cbd5e1;
+  margin-bottom: 18px;
+  line-height: 1.45;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: linear-gradient(90deg,#06b6d4,#0ea5a4);
+  color: #042027;
+  box-shadow: 0 6px 18px rgba(2,128,128,0.16);
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(2,128,128,0.18); }
+
+/* Form elements (if you have any) */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  color: #e6eef6;
+  margin-bottom: 12px;
+  outline: none;
+}
+input:focus, textarea:focus { border-color: rgba(14,165,164,0.9); box-shadow: 0 6px 20px rgba(2,128,128,0.06); }
+
+/* Simple responsive */
+@media (max-width: 600px) {
+  .container { margin: 18px; padding: 18px; }
+  h1 { font-size: 1.5rem; }
+}
